@@ -36,7 +36,7 @@ Tema: Plantas, flores e decoração.
 [**Luisa Nievas**](https://github.com/lunievas)
 >
 [**Marco Alexandre Moutsopoulos**](https://github.com/MarcoMoutsopoulos)
->
+
 [**Melissa Artioli**](https://github.com/Umarti5)
 >
 [**Tricia Nayara Santos Santana**](https://github.com/triciasanttana)
