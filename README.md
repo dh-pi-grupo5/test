@@ -23,7 +23,7 @@ Tema: Plantas, flores e decoração.
 >
 [**Lidiane Faria**](https://github.com/lidifaria)
 >
-[**Luisa Pereira**](https://github.com/lunievas)
+[**Luisa Nievas**](https://github.com/lunievas)
 >
 [**Marco Alexandre Moutsopoulos**](https://github.com/MarcoMoutsopoulos)
 >
