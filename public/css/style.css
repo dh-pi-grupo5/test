@@ -14,7 +14,7 @@
 
 body{
     font-family: Arial, Helvetica, sans-serif;
-    background-color: var(--color-dark1);
+    background-color:#d4bdd1;
     color: var(--color-white);
 }
 
@@ -29,7 +29,7 @@ body{
 }
 
 .header{
-    background-color: var(--color-dark2);
+    background-color:rgb(122, 24, 73);
     box-shadow: 1px 1px 4px var(--color_dark4);
     height: 7em;
     justify-content: space-between;
@@ -41,7 +41,7 @@ body{
 
     .navigation_header a{
         text-decoration: none ;
-        color: var(--color-purple);
+        color: var(rgb(122, 24, 73));
         transition: 1s;
         font-weight: bold;     
     }
@@ -55,10 +55,10 @@ body{
    .content{
     text-align: center;
     padding-top: 5em;
-    height: 50vh;
+    height: 70vh;
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items:center;
     justify-content: space-between;
     padding: 0 10%;
     
@@ -72,3 +72,9 @@ body{
   .force-opaque::placeholder {
     opacity: 1;
   }
+
+  .img_carrinho_header{
+    width: 50px;
+  }
+
+  

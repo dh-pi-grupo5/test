@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--Linka o arquivo style.css com o index.html-->
+    <link rel="stylesheet" type="text/css" href="/css/style.css" />
+    <!--                                           -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<header>
+<div class="header" id="header">
+    <div class="logo_header">
+        <a href="/"> <img src="/img/Logo.png" class="img_logo_header" alt="LogoSite"></a>
+    </div>
+    
+    <div class="navigation_header">
+        <a href="/produtos" class="active">Produtos</a>
+        <a href="/quemSomos.html"class="active">Sobre Nós</a>
+        <a href="/carrinho.html"class="active">Carrinho</a>
+        <a href="/entrar.html"class="active">Entrar</a>
+    </div>
+
+   <!--PLACEHOLDER--> 
+    <a href="/">
+        <img src="" alt="">
+    </a>
+    <input type="text" name="" id="" placeholder="Escreva aqui o que procura..">
+    <button>Buscar</button>
+    <a href="">
+        <img src="" alt="">
+        <span></span>
+    <!--FIM DO PLACEHOLDER-->
+
+
+</header>
+<!-- Armazenamento dos preços no carrinho-->
+<script>
+    function AddCarrinho(produto, qtd, valor, posicao)
+    { 
+    localStorage.setItem("produto" + posicao, produto);
+    localStorage.setItem("qtd" + posicao, qtd);
+    valor = valor * qtd;
+    localStorage.setItem("valor" + posicao, valor);
+    alert("Produto adicionado ao carrinho!");
+    }
+   </script>
+
+
+
+<Body>
+
+
+
+
+
+ <div class="content" id="content">
+            
+    <article>
+        <img src="/img/Margaridas.png" alt="">
+        <h2>Margarida</h2>
+        <span>R$ 40,50</span>
+        <a href="/">Ver mais</a>
+        <button type="button" id="adicionar1" id="produto1" onclick="AddCarrinho('Margarida', document.getElementById('qtd1').value, '2.00', 1)"> Comprar </button>
+    </article>  <article>
+        <img src="/img/Crisantemos.png" alt="">
+        <h2>Crisantemo</h2>
+        <span>R$ 40,50</span>
+        <a href="/">Ver mais</a>
+        <button type="button" id="adicionar1" id="produto1" onclick="AddCarrinho('Crisantemo', document.getElementById('qtd1').value, '2.00', 1)"> Comprar </button> 
+    </article>  <article>
+        <img src="/img/Orquidea.png" alt="">
+        <h2>Orquidea</h2>
+        <span>R$ 40,50</span>
+        <a href="/">Ver mais</a>
+        <button type="button" id="adicionar2" id="produto2" onclick="AddCarrinho('Orquidea', document.getElementById('qtd1').value, '2.00', 1)"> Comprar </button>  
+    </article>  <article>
+        <img src="/img/Rosas.png" alt="">
+        <h2>Rosa</h2>
+        <span>R$ 40,50</span>
+        <a href="/">Ver mais</a>
+        <button type="button" id="adicionar3" id="produto3" onclick="AddCarrinho('Rosa', document.getElementById('qtd1').value, '2.00', 1)"> Comprar </button>  
+    </article>  <article>
+        <img src="/img/CopoDeLeite.png" alt="">
+        <h2>Copo de Leite</h2>
+        <span>R$ 40,50</span>
+        <a href="/">Ver mais</a>
+        <button type="button" id="adicionar4" id="produto4" onclick="AddCarrinho('Copo de Leite', document.getElementById('qtd1').value, '2.00', 1)"> Comprar </button>  
+    </article>  
+    <article>
+        <img src="/img/Samambaia.png" alt="">
+        <h2>Samambaia</h2>
+        <span>R$ 40,50</span>
+        <a href="/">Ver mais</a>
+        <button type="button" id="adicionar5" id="produto5" onclick="AddCarrinho('Samambaia', document.getElementById('qtd1').value, '2.00', 1)"> Comprar </button>  
+    </article>  
+</div>
+
+<div class="footer-clean">
+    <footer>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-sm-4 col-md-3 item">
+                    <h3>Services</h3>
+                    <ul>
+                        <li><a href="#">Web design</a></li>
+                        <li><a href="#">Development</a></li>
+                        <li><a href="#">Hosting</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-4 col-md-3 item">
+                    <h3>About</h3>
+                    <ul>
+                        <li><a href="#">Company</a></li>
+                        <li><a href="#">Team</a></li>
+                        <li><a href="#">Legacy</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-4 col-md-3 item">
+                    <h3>Careers</h3>
+                    <ul>
+                        <li><a href="#">Job openings</a></li>
+                        <li><a href="#">Employee success</a></li>
+                        <li><a href="#">Benefits</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 item social"><a href="#"><i class="icon ion-social-facebook"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-snapchat"></i></a><a href="#"><i class="icon ion-social-instagram"></i></a>
+                    <p class="copyright">Company Name © 2022</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+
+</Body>
+</html>
