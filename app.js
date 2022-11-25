@@ -14,17 +14,17 @@ servidor.get('/', (req, res)=>{
     return res.sendFile(__dirname + "/views/index.html");
 });
 
-servidor.get('/carrinho.html',(req, res)=>{
+servidor.get('/carrinho',(req, res)=>{
     return res.sendFile(__dirname + "/views/carrinho.html");
 });
 
-servidor.get('/produtos.html',(req, res)=>{
+servidor.get('/produtos',(req, res)=>{
     return res.sendFile(__dirname + "/views/produtos.html");
 });
-servidor.get('/quemSomos.html',(req, res)=>{
+servidor.get('/quemSomos',(req, res)=>{
     return res.sendFile(__dirname + "/views/quemSomos.html");
 });
-servidor.get('/entrar.html',(req, res)=>{
+servidor.get('/entrar',(req, res)=>{
     return res.sendFile(__dirname + "/views/entrar.html");
 });
 
