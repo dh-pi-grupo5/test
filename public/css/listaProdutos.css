@@ -1,0 +1,19 @@
+
+h1{
+    text-align:center;
+    padding-top:1em;  
+    color:#b040ff;
+}
+
+h3{color:#b040ff;}
+
+main div{
+    text-align: center;
+    padding-top: 1em;
+    height: 70vh;
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+    justify-content: space-between;
+    padding: 0 10%;
+  }

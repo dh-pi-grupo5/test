@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,12 +7,16 @@
 	<title>Carrinho</title>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
-    <link rel="stylesheet" href="assets/css/style.css">
+    <!--Linka os arquivos .css com o carrinho.html-->
+<link rel="stylesheet" type="text/css" href="/css/style.css" />
+<link rel="stylesheet" type="text/css" href="/css/carrinho.css">
+<!--                                           -->
+
+
+
 </head>
 
-<!--Linka o arquivo style.css com o index.html-->
-<link rel="stylesheet" type="text/css" href="/css/style.css" />
-<!--                                           -->
+
 
 
 <header>
@@ -23,7 +27,7 @@
 
 <div class="navigation_header">
 	<a href="/produtos"class="active">Produtos</a>
-	<a href="/quemSomos"class="active">Sobre Nós</a>
+	<a href="https://keukenhof.nl/en/"class="active">Sobre Nós</a>
 	<!--PLACEHOLDER--> 
 	<a href="/">
 		<img src="" alt="">
@@ -35,156 +39,65 @@
 		<span></span>
 		<!--FIM DO PLACEHOLDER-->
 		<a href="/carrinho"><img src="/img/Carrinho.png"class="img_carrinho_header"></a>
-		<a href="/entrar"class="active">Entrar</a>
+		<a href="/login"class="active">Entrar</a>
 </div>
-
-
 
 </header>
 
 <body>
-	
-</body>
+	<!-- layout formulario carrinho -->
+	<div class="container text-center">
+        <div class="background">
+            <img class="imagem-carrinho" id="carrinho" src="img/Carrinho.png" alt="">
+            <div class="container separdor">
+                <label class="texto" for="produto">Produtos: </label>
+                <input class="form-control" id="produto" type="text" maxlength="15">
+            </div>
+    
+            <div class="container separdor">
+                <label class="texto" for="valor">Valor:</label>
+                <input class="form-control" id="valor" type="number">
+            </div>
+    
+            <div class="container separdor">
+                <label class="texto" for="quanditade">Quantidade:</label>
+                <input class="form-control" id="quanditade" type="number">
+            </div>
+    
+            <div class="container separdor">
+                <button class="btn btn-success" type="submit" id="adicionarProduto">Adicionar</button>
+                <button class="btn btn-warning" type="submit" id="somarProdutos">Somar</button>
+                <button class="btn btn-danger" type="submit" id="removerItens">Remover</button>
+            </div>
+    
+            <div id="local-valor-total">
+                <p class="texto" >Valor total dos produtos: </p>
+                <p class="texto" id="valorFinal"></p>
+            </div>
+        </div>
+    </div>
 
-<footer>
+    <div class="container text-center">
+        <div class="background">
+            <section id="itens-adicionados">
+                <div class="itens text-center">
+                    <p>Produtos</p>
+                    <div id="local-produtos">
+                    </div>
+                </div>
+                <div class="itens text-center">
+                    <p>Valor</p>
+                    <div id="local-valor">
+                    </div>
+                </div>
+                <div class="itens text-center">
+                    <p>Quantidade</p>
+                    <div id="local-quantidade">
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
 
-	<div class="footer-clean">
-		<footer>
-			<div class="container">
-				<div class="row justify-content-center">
-					<div class="col-sm-4 col-md-3 item">
-						<h3>Services</h3>
-						<ul>
-							<li><a href="https://portalidea.com.br/curso-gratuito-hidroponia?gclid=CjwKCAiAyfybBhBKEiwAgtB7foJlI5KmWjiQj59pPnHzKp6WUeHm29o2c1kyeHBGeBTB6FBtxqFXUxoCjJcQAvD_BwE">Curso de Hidroponia</a></li>
-							<li><a href="https://www.embrapa.br/contando-ciencia/solos/-/asset_publisher/1ZCT5VQ5Hj1S/content/o-solo-e-o-plantio-na-agricultura/1355746?inheritRedirect=false">Solo&Plantio</a></li>
-							<li><a href="#">Hosting</a></li>
-						</ul>
-					</div>
-					<div class="col-sm-4 col-md-3 item">
-						<h3>Sobre</h3>
-						<ul>
-							<li><a href="#">Compania</a></li>
-							<li><a href="#">Team</a></li>
-							<li><a href="#">Legacy</a></li>
-						</ul>
-					</div>
-					<div class="col-sm-4 col-md-3 item">
-						<h3>Carreiras</h3>
-						<ul>
-							<li><a href="#">Vagas de Trabalho</a></li>
-							<li><a href="#">Employee success</a></li>
-							<li><a href="#">Beneficios</a></li>
-						</ul>
-					</div>
-					<div class="col-lg-3 item social"><a href="#"><i class="icon ion-social-facebook"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-snapchat"></i></a><a href="#"><i class="icon ion-social-instagram"></i></a>
-						<p class="copyright">Five5 Floricultura © 2022</p>
-					</div>
-				</div>
-			</div>
-		</footer>
-	</div>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
-
-	<!DOCTYPE html>
-	<html lang="en">
-	<head>
-		<meta charset="UTF-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>Carrinho</title>
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
-		<link rel="stylesheet" href="assets/css/style.css">
-	</head>
-	
-	<!--Linka o arquivo style.css com o index.html-->
-	<link rel="stylesheet" type="text/css" href="/css/style.css" />
-	<!--                                           -->
-	
-	
-	<header>
-	<div class="header" id="header">
-	<div class="logo_header">
-		<a href="/"> <img src="/img/Logo.png" class="img_logo_header" alt="LogoSite"></a>
-	</div>
-	
-	<div class="navigation_header">
-		<a href="/produtos"class="active">Produtos</a>
-		<a href="/quemSomos"class="active">Sobre Nós</a>
-		<!--PLACEHOLDER--> 
-		<a href="/">
-			<img src="" alt="">
-		</a>
-		<input type="text" name="" id="" placeholder="Pesquisa de Produto">
-		<button>Buscar</button>
-		<a href="">
-			<img src="" alt="">
-			<span></span>
-			<!--FIM DO PLACEHOLDER-->
-			<a href="/carrinho"><img src="/img/Carrinho.png"class="img_carrinho_header"></a>
-			<a href="/entrar"class="active">Entrar</a>
-	</div>
-	
-	
-	
-	</header>
-	
-	<body>
-		
-	</body>
-	
-	<footer>
-	
-		<div class="footer-clean">
-			<footer>
-				<div class="container">
-					<div class="row justify-content-center">
-						<div class="col-sm-4 col-md-3 item">
-							<h3>Services</h3>
-							<ul>
-								<li><a href="https://portalidea.com.br/curso-gratuito-hidroponia?gclid=CjwKCAiAyfybBhBKEiwAgtB7foJlI5KmWjiQj59pPnHzKp6WUeHm29o2c1kyeHBGeBTB6FBtxqFXUxoCjJcQAvD_BwE">Curso de Hidroponia</a></li>
-								<li><a href="https://www.embrapa.br/contando-ciencia/solos/-/asset_publisher/1ZCT5VQ5Hj1S/content/o-solo-e-o-plantio-na-agricultura/1355746?inheritRedirect=false">Solo&Plantio</a></li>
-								<li><a href="#">Hosting</a></li>
-							</ul>
-						</div>
-						<div class="col-sm-4 col-md-3 item">
-							<h3>Sobre</h3>
-							<ul>
-								<li><a href="#">Compania</a></li>
-								<li><a href="#">Team</a></li>
-								<li><a href="#">Legacy</a></li>
-							</ul>
-						</div>
-						<div class="col-sm-4 col-md-3 item">
-							<h3>Carreiras</h3>
-							<ul>
-								<li><a href="#">Vagas de Trabalho</a></li>
-								<li><a href="#">Employee success</a></li>
-								<li><a href="#">Beneficios</a></li>
-							</ul>
-						</div>
-						<div class="col-lg-3 item social"><a href="#"><i class="icon ion-social-facebook"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-snapchat"></i></a><a href="#"><i class="icon ion-social-instagram"></i></a>
-							<p class="copyright">Five Garden Floricultura © 2022</p>
-						</div>
-					</div>
-				</div>
-			</footer>
-		</div>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
-	
-	
-	
-	</footer>
-	</html>
-	
-	
-	
-	
-
-</footer>
-</html>
-
-
+<!-- fim do formulario Carrinho -->
 

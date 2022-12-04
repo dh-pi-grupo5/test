@@ -21,12 +21,23 @@ servidor.get('/carrinho',(req, res)=>{
 servidor.get('/produtos',(req, res)=>{
     return res.sendFile(__dirname + "/views/produtos.html");
 });
-servidor.get('/quemSomos',(req, res)=>{
-    return res.sendFile(__dirname + "/views/quemSomos.html");
+// servidor.get('/quemSomos',(req, res)=>{
+//     return res.sendFile(__dirname + "/views/quemSomos.html");
+// });
+servidor.get('/login',(req, res)=>{
+    return res.sendFile(__dirname + "/views/login.html");
 });
-servidor.get('/entrar',(req, res)=>{
-    return res.sendFile(__dirname + "/views/entrar.html");
+servidor.get('/listaProdutos',(req, res)=>{
+    return res.sendFile(__dirname + "/views/listaProdutos.html");
 });
-
+servidor.get('/cadastro',(req, res)=>{
+    return res.sendFile(__dirname + "/views/cadastro.html");
+});
+servidor.get('/painel-usuario',(req, res)=>{
+    return res.sendFile(__dirname + "/views/painel-usuario.html");
+});
+servidor.get('/checkout-pagamento',(req, res)=>{
+    return res.sendFile(__dirname + "/views/checkout-pagamento.html");
+});
 // 4 - Por o servidor no modo "aguardando requisição"
 servidor.listen(3000);
